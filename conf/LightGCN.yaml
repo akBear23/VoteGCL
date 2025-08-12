@@ -1,0 +1,20 @@
+training.set: ./dataset/amazon_book_filtered/train.txt
+
+test.set: ./dataset/amazon_book_filtered/test.txt
+
+model:
+  name: LightGCN
+  type: graph
+
+item.ranking.topN: [10,20]
+
+embedding.size: 256
+max.epoch: 100
+batch.size: 2048
+learning.rate: 0.001
+reg.lambda: 0.0001
+
+LightGCN:
+  n_layer: 2
+
+output: ./results/
