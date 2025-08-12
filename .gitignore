@@ -9,7 +9,6 @@ config.yaml
 results/
 *.csv
 *.pkl
-*.txt
 
 # Dataset files (usually large)
 # dataset/

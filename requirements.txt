@@ -1,0 +1,8 @@
+numba
+numpy
+PyYAML
+scipy
+torch
+google-generativeai
+openai>=1.3.0
+pytorch_lightning
