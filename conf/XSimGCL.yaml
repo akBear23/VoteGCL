@@ -1,0 +1,23 @@
+training.set: ./dataset/movielen-100k/train.txt
+
+test.set: ./dataset/movielen-100k/test.txt
+model:
+  name: XSimGCL
+  type: graph
+
+item.ranking.topN: [5, 10]
+
+embedding.size: 256
+max.epoch: 50
+batch.size: 2048
+learning.rate: 0.001
+reg.lambda: 0.0001
+
+XSimGCL:
+  n_layer: 2
+  l_star: 1
+  lambda: 0.1
+  eps: 0.2
+  tau: 0.15
+
+output: ./results/

@@ -1,0 +1,24 @@
+training.set: ./dataset/yelp2018/train.txt
+
+test.set: ./dataset/yelp2018/test.txt
+
+augmented.set: ./dataset/yelp2018/train_augmented.txt
+
+model:
+  name: VoteGCL
+  type: graph
+
+item.ranking.topN: [10, 20]
+
+embedding.size: 256
+max.epoch: 100
+batch.size: 2048
+learning.rate: 0.001
+reg.lambda: 0.0001
+
+VoteGCL:
+  n_layer: 2
+  lambda: 0.1
+  temp: 0.2
+
+output: ./results/
